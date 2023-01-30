@@ -23,7 +23,7 @@ def crypt_hash(propozitie):
                   "y":"b", "z":"c"}
     rezultat = ""
     for element in propozitie:
-        if element in (".", "-", "?", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0"):
+        if element in (" ", "-", "?", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0"):
             rezultat += element
         else:
             rezultat += dict3crypt[element]
@@ -36,7 +36,7 @@ def decrypt_hash(propozitie):
                   "y":"b", "z":"c"}
     rezultat = ""
     for element in propozitie:
-        if element in (".", "-", "?", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0"):
+        if element in (" ", "-", "?", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0"):
             rezultat += element
         else:
             rezultat += dict3decrypt[element]
